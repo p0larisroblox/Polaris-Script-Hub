@@ -1,0 +1,706 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Polaris Hub",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Polaris Hub",
+   LoadingSubtitle = "by polaris",
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+ 
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+ 
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "UzXPAMfM4E", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+ 
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+ 
+local Tab = Window:CreateTab("Teleports", 11514102342) -- Title, Image
+local Section = Tab:CreateSection("Fast Teleports")
+ 
+local Button = Tab:CreateButton({
+   Name = "Lobby",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(53959.8828, 10192.1982, 6425.30029, -9.24797787e-05, -6.78369929e-08, -1, -7.97628422e-11, 1, -6.78369858e-08, 1, 7.3489298e-11, -9.24797787e-05)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Area 51",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-113.843536, 203.000015, 241.547775, -4.47036932e-08, 1.399816e-08, 1, 1.52070179e-08, 1, -1.39981591e-08, -1, 1.52070179e-08, -4.47036932e-08)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "VIP Spawn",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-278.726013, 204.200043, 242.040024, -0.00872687623, 3.22550022e-08, -0.999961913, -9.0214634e-08, 1, 3.30435554e-08, 0.999961913, 9.04995687e-08, -0.00872687623)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Badge Room",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-421.645813, 27.0000076, 166.360519, 1, 5.1334446e-08, -1.58742323e-13, -5.1334446e-08, 1, -9.77087478e-09, 1.58240744e-13, 9.77087478e-09, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Second Badge Room",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-446.768341, 47.6000061, -158.037231, -5.30853015e-08, -5.94918497e-08, 1, 3.33415997e-08, 1, 5.94918497e-08, -1, 3.33416033e-08, -5.30853015e-08)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Other Games Badge",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-356.51123, 27.0000076, 5.6240921, 0.99984771, 2.32299993e-08, -0.0174530055, -2.48558223e-08, 1, -9.29374124e-08, 0.0174530055, 9.33570661e-08, 0.99984771)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Leftovers",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-157.233582, 203.355042, 363.883606, -0.999992013, -2.97898789e-10, 0.00399744231, -2.70099165e-10, 1, 6.95489311e-09, -0.00399744231, 6.95375801e-09, -0.999992013)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Leftovers VIP",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-159.092651, 203.355042, 442.954346, -1, 9.81958053e-08, -2.59172084e-09, 9.81958053e-08, 1, 7.15954585e-08, 2.59172794e-09, 7.15954585e-08, -1)
+   end,
+})
+ 
+local Label = Tab:CreateLabel("World Teleorts", nil, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+ 
+local Button = Tab:CreateButton({
+   Name = "Void World",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4649.66797, 144.400009, 5268.88867, -0.000352149276, 3.0565237e-09, 0.99999994, 5.33169864e-09, 1, -3.05464654e-09, -0.99999994, 5.33062261e-09, -0.000352149276)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Devil World",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6719.36133, 141.400024, -6181.42578, -0.00637033861, -1.11834815e-07, 0.999979734, -3.56521923e-10, 1, 1.11834815e-07, -0.999979734, 3.56521923e-10, -0.00637033861)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Verseful World",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2944.27881, -84.4413528, 8069.13477, -0.999822319, 8.14920309e-09, -0.0188493431, 7.50749951e-09, 1, 3.41145814e-08, 0.0188493431, 3.39670088e-08, -0.999822319)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Wand", 15289768217) -- Title, Image
+local Section = Tab:CreateSection("Powerful Tab")
+ 
+local Button = Tab:CreateButton({
+   Name = "Moonhail",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-135.679077, 5103.31934, 3206.07837, -1, 4.18249826e-08, 1.48080289e-06, 4.18249009e-08, 1, -5.65728371e-08, -1.48080289e-06, -5.65727767e-08, -1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Max Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.3733397, 24.8000107, 11332.9033, 0.999657333, 6.57304824e-08, 0.0261772089, -6.58068373e-08, 1, 2.0553077e-09, -0.0261772089, -3.77724296e-09, 0.999657333)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "W_A_N_D",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442.257965, 47.4000053, 184.648895, 1, -1.19726584e-08, -4.29398059e-15, 1.19726584e-08, 1, 8.0110901e-08, 3.33484008e-15, -8.0110901e-08, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "W_A_N_D Lite",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-397.593842, 47.4000053, 152.293259, -0.999961913, 9.74760539e-08, -0.00872739032, 9.70320215e-08, 1, 5.13016687e-08, 0.00872739032, 5.04528792e-08, -0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "The Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-357.514343, 32.6000023, 258.705048, 1, 3.37683517e-08, -1.8140784e-13, -3.37683517e-08, 1, -1.39915182e-08, 1.80935372e-13, 1.39915182e-08, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Nightmare Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-343.437988, 27.0000076, -234.549622, -6.61237465e-08, 2.54904542e-08, 1, -4.01099065e-08, 1, -2.5490456e-08, -1, -4.01099101e-08, -6.61237465e-08)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Lost Soul Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-682.92804, 47.6000099, -323.886627, -1, -1.15555459e-08, -5.58789459e-09, -1.1555545e-08, 1, -9.63278524e-08, 5.58789548e-09, -9.63278524e-08, -1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Byzantime Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-134.199249, -10.5206404, 361.28006, 0.00732606975, 1.10104217e-07, -0.999973178, 4.30513509e-08, 1, 1.10422576e-07, 0.999973178, -4.38591599e-08, 0.00732606975)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Mithrilfull",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-752.811951, 47.5775528, -320.101807, 0.00314057874, 3.49967095e-08, 0.999995053, 9.44941334e-08, 1, -3.52936489e-08, -0.999995053, 9.46045091e-08, 0.00314057874)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Complex Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-566.698975, -20.0625744, 643.738464, -0.700856388, 3.07969344e-10, 0.713302433, -3.53780716e-09, 1, -3.90782917e-09, -0.713302433, -5.26235366e-09, -0.700856388)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Rainbow Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-466.63855, 27.0000076, -131.249573, 0.0261768047, 3.68350211e-10, 0.999657333, 5.46745627e-09, 1, -5.11646059e-10, -0.999657333, 5.47897594e-09, 0.0261768047)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Dark Death Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-468.883057, 27.0000076, -186.521103, -0.999847651, 2.43342374e-10, 0.0174540691, -1.28240682e-10, 1, -2.12880753e-08, -0.0174540691, -2.12870699e-08, -0.999847651)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Dark Death Sword",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-298.94632, 27.0000057, -27.060833, -6.98491931e-08, -3.30322614e-08, 1, -1.16068087e-07, 1, 3.30322507e-08, -1, -1.1606808e-07, -6.98491931e-08)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Dark Death Scythe",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-510.677856, 27.0000076, 157.047699, -0.00872505363, -6.65990353e-12, 0.999961913, -4.46374968e-12, 1, 6.62120879e-12, -0.999961913, -4.40580948e-12, -0.00872505363)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Dark Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-215.447495, 25.2000027, 1334.40601, -0.999961913, -1.44743133e-08, -0.00872509554, -1.45430468e-08, 1, 7.81428611e-09, 0.00872509554, 7.94087818e-09, -0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Darker Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-508.453156, 27.0000076, 112.586243, -0.0174480844, 1.19798898e-07, 0.99984777, -2.54131791e-08, 1, -1.20260609e-07, -0.99984777, -2.75076282e-08, -0.0174480844)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Darkest Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-448.905396, 47.6000061, -220.104004, -0.0087254066, 3.97048403e-08, 0.999961913, 4.90417085e-09, 1, -3.96635613e-08, -0.999961913, 4.55790383e-09, -0.0087254066)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Bright Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-196.109039, 25.2000027, 1325.19141, 0.999961913, -5.25476551e-10, 0.00872700475, -4.02828298e-10, 1, 1.06369768e-07, -0.00872700475, -1.06369235e-07, 0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Brighter Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-509.379761, 27.0000076, 102.580872, 0.0174506269, -3.9440593e-08, 0.99984771, 6.39859579e-08, 1, 3.83298335e-08, -0.99984771, 6.33073327e-08, 0.0174506269)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Brightest Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-551.598328, 47.6000061, -219.673492, -0.00872466341, -5.50286536e-08, 0.999961913, 9.5363518e-08, 1, 5.58627953e-08, -0.999961913, 9.58472697e-08, -0.00872466341)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Depth Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-598.085022, 47.6000061, -105.77491, -1.42678618e-06, -9.03846527e-08, -1, 4.23860919e-10, 1, -9.03846527e-08, 1, -4.23989871e-10, -1.42678618e-06)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Plasmaticonitic Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15958.9629, 152.000015, -10991.8496, -0.999962032, -2.72826082e-08, 0.00871138088, -2.77839778e-08, 1, -5.74323167e-08, -0.00871138088, -5.76721746e-08, -0.999962032)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Vengeless Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-504.299133, 27.0000076, 130.706345, -0.0174504053, 4.40046577e-08, 0.99984771, 7.42073922e-08, 1, -4.27162128e-08, -0.99984771, 7.34506784e-08, -0.0174504053)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Vengefull Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-539.658813, 27.0000076, 131.055832, -0.0174518544, -3.33999211e-08, 0.99984771, -8.98679318e-08, 1, 3.18364073e-08, -0.99984771, -8.92986449e-08, -0.0174518544)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Verseful Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2946.79883, -84.4494247, 8231.75488, -0.9993909, -9.66231042e-08, 0.0348971188, -9.73746168e-08, 1, -1.98355643e-08, -0.0348971188, -2.32215775e-08, -0.9993909)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Verseless Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3013.55811, -84.4413528, 8138.36816, 1, -8.54032511e-10, -9.71710302e-14, 8.54032511e-10, 1, 5.36439071e-09, 9.71664494e-14, -5.36439071e-09, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "verzfll wdand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2898.69653, -84.4447327, 8160.36377, 0.00874359906, -3.93546484e-09, -0.999961793, 3.39188588e-08, 1, -3.63903085e-09, 0.999961793, -3.3885744e-08, 0.00874359906)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Flare Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-486.745636, 27.0000076, 152.345367, 0.999961853, -3.87910362e-08, -0.00873263553, 3.90231705e-08, 1, 2.64118789e-08, 0.00873263553, -2.6751648e-08, 0.999961853)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Nebula Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-626.896606, 47.5995903, -210.912964, 0.00872686412, 5.8608574e-08, 0.999961913, -1.44297374e-08, 1, -5.84848756e-08, -0.999961913, -1.39187986e-08, 0.00872686412)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Omega Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.798981, 15.0000067, 851.395691, -1, 1.94338057e-08, -3.80719323e-09, 1.94338039e-08, 1, 2.59372239e-08, 3.80719367e-09, 2.59372239e-08, -1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Wega Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-671.039001, 5.00000906, -417.68576, -0.760404289, 1.49299826e-08, 0.649450004, 2.51275321e-08, 1, 6.4317498e-09, -0.649450004, 2.12098055e-08, -0.760404289)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Stupid Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-746.036865, 27.0500088, 355.852661, 0.0174551588, -9.48655483e-08, 0.999847651, 3.85388965e-08, 1, 9.42071949e-08, -0.999847651, 3.68886219e-08, 0.0174551588)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Stupidus Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-760.228027, 18.0500088, 418.226807, -0.999961913, 5.01350037e-08, -0.00872865785, 4.98735844e-08, 1, 3.01672216e-08, 0.00872865785, 2.97307441e-08, -0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.579926, 15.0007906, 722.925171, -0.999847829, -6.13917521e-08, 0.0174463801, -6.12162623e-08, 1, 1.05930438e-08, -0.0174463801, 9.52342916e-09, -0.999847829)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Crazy Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-286.43158, 15.0014753, 730.435913, 0.00872869883, 4.00486506e-08, 0.999961913, -5.03113426e-08, 1, -3.96110096e-08, -0.999961913, -4.99636741e-08, 0.00872869883)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Connect Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5893.51123, 144.399979, 5329.13916, -0.0436187983, 2.60952007e-08, -0.999048233, 2.28790125e-08, 1, 2.51211549e-08, 0.999048233, -2.17614815e-08, -0.0436187983)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Void Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5893.51123, 144.399979, 5329.13916, -0.0436187983, 2.60952007e-08, -0.999048233, 2.28790125e-08, 1, 2.51211549e-08, 0.999048233, -2.17614815e-08, -0.0436187983)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Glitch Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5895.12109, 203.000015, 5329.39746, -0.0958716571, -1.0270459e-07, -0.995393693, -5.15732488e-08, 1, -9.82125741e-08, 0.995393693, 4.19198862e-08, -0.0958716571)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Coil Wand",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9798.2627, -60.599987, 2722.9104, -0.130528972, -6.90700261e-08, 0.991444468, 3.77310414e-08, 1, 7.46335473e-08, -0.991444468, 4.71500741e-08, -0.130528972)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Coils", 6336480739) -- Title, Image
+local Section = Tab:CreateSection("hahaz coilz gamey")
+ 
+local Button = Tab:CreateButton({
+   Name = "Horrific Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-47618.5586, 5.00008345, 3273.85571, 0.0173331425, -3.01829068e-08, 0.999849796, 7.44185442e-08, 1, 2.88973414e-08, -0.999849796, 7.39064845e-08, 0.0173331425)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "End Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.278435, 24.8000031, 1957.71716, -0.999657333, -2.83664043e-08, 0.0261771102, -2.85781745e-08, 1, -7.71577291e-09, -0.0261771102, -8.46122283e-09, -0.999657333)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Flying Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-696.075623, 47.6000099, -234.94986, -0.999657214, 6.99429421e-08, 0.0261803474, 6.99419758e-08, 1, -9.52596113e-10, -0.0261803474, 8.78835615e-10, -0.999657214)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Blessing Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-644.360046, 47.6000099, -113.658386, -0.999961853, 6.7526635e-08, 0.00873196684, 6.68622135e-08, 1, -7.63827401e-08, -0.00873196684, -7.57959882e-08, -0.999961853)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Go Crazy Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-406.988861, 27.3000355, -502.321442, 0.999961913, -4.46312001e-08, -0.00872624852, 4.39377317e-08, 1, -7.9660964e-08, 0.00872624852, 7.92745212e-08, 0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Time Stop Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2.54514742, 52.8000107, 287.216278, -0.0251299143, 5.16729024e-08, -0.999684215, -3.99907201e-08, 1, 5.26945065e-08, 0.999684215, 4.13023002e-08, -0.0251299143)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Bubble Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2186.77148, 57.4000092, 190.507019, -0.999999464, 8.25613e-08, 0.00104980893, 8.26613658e-08, 1, 9.52731085e-08, -0.00104980893, 9.53598303e-08, -0.999999464)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Coil Launcher",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-194.368652, -131.000397, -416.75882, 0.99984771, 8.34329228e-09, 0.0174516719, -8.31323987e-09, 1, -1.79455917e-09, -0.0174516719, 1.64920599e-09, 0.99984771)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Plasmaticonitic Coil Launcher",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-191.523041, -289.002167, -522.621277, 1, -3.69935513e-08, 1.6917453e-13, 3.69935513e-08, 1, -4.33234737e-09, -1.69014271e-13, 4.33234737e-09, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Grass Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-340.535309, 27.0000076, -14.6274061, -0.0174521413, -2.67524616e-08, -0.99984771, 4.45245405e-08, 1, -2.75337033e-08, 0.99984771, -4.49982807e-08, -0.0174521413)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Star Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-338.498199, 27.0000076, -65.2411728, 0.00872646831, -1.29079147e-09, -0.999961913, 4.66931649e-09, 1, -1.25009236e-09, 0.999961913, -4.6582298e-09, 0.00872646831)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Rat Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(54152.9219, 10080.835, 6599.02979, -0.573724508, -4.1185924e-08, -0.819048345, 3.63643942e-08, 1, -7.57575194e-08, 0.819048345, -7.32481453e-08, -0.573724508)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Banana Coil",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(54196.7109, 10080.835, 6567.64893, 0.824039876, -1.47851962e-08, 0.566531777, 3.80398407e-10, 1, 2.55444323e-08, -0.566531777, -2.08341238e-08, 0.824039876)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Lobotomy Coil 1",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1490.5033, 57.4000092, 120.291992, 0.00872597005, 1.09281055e-08, -0.999961913, -1.18382433e-08, 1, 1.08252172e-08, 0.999961913, 1.17433316e-08, 0.00872597005)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Lobotomy Coil 2",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1512.73865, 57.4000092, 118.866928, -0.0087260697, -1.33465887e-08, 0.999961913, -3.42806032e-08, 1, 1.30479512e-08, -0.999961913, -3.4165442e-08, -0.0087260697)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Lobotomy Coil 3",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1560.49109, 57.4000092, 119.829315, -7.33882189e-07, -1.49215467e-08, -1, -1.73088992e-08, 1, -1.49215342e-08, 1, 1.73088868e-08, -7.33882189e-07)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Mew Coil ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1535.05652, 57.4000092, 119.918968, 0.0174528863, -3.62519756e-08, 0.99984771, 9.9240907e-08, 1, 3.45251934e-08, -0.99984771, 9.86232251e-08, 0.0174528863)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Ginormous Gravity Coil ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1988.27002, 4.47052193, 2376.30518, -0.358428001, -0.933557391, -2.89082527e-06, 2.89082527e-06, -4.29153442e-06, 1, -0.933557391, 0.358427972, 4.17232513e-06)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Ginormous Speed Coil ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4361.09863, -29.4294872, 69.7235718, 0.629326999, 0.777140617, 4.50015068e-06, 4.50015068e-06, -9.53674316e-06, 1.00000012, 0.777140617, -0.629327059, -9.53674316e-06)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Ginormous Fusion Coil ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1226.9436, 166.064987, 459.523529, 0.308971882, -0.951071143, 7.30156898e-06, 7.30156898e-06, 1.00135803e-05, 1, -0.951071143, -0.308971882, 1.00135803e-05)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Blocks", 2677686655) -- Title, Image
+local Section = Tab:CreateSection("funny blovks")
+ 
+local Button = Tab:CreateButton({
+   Name = "Parallax Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-521.193359, -20.9605713, 477.666962, 0.672503769, -0.218546018, 0.707090139, 0.309051543, 0.951045275, 1.24722719e-05, -0.672477484, 0.218518853, 0.707123518)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Plasmaticonitic Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15837.0254, 152.000015, -10961.1201, 0.323687583, 1.61167846e-09, -0.946164012, 3.40653941e-08, 1, 1.33573286e-08, 0.946164012, -3.65550505e-08, 0.323687583)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Rainbow Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.9937363, 51.4000168, 383.917847, 0.00872616097, 7.81013654e-08, -0.999961913, 2.00630961e-08, 1, 7.82794132e-08, 0.999961913, -2.07454107e-08, 0.00872616097)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Devil Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8200.5957, 141.400024, -6366.11475, -0.00872256327, -1.75407919e-08, -0.999961972, 1.98803605e-08, 1, -1.77148731e-08, 0.999961972, -2.00341237e-08, -0.00872256327)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "God Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2665.7146, 1863.12366, 433.149414, -0.00872315187, 1.03035562e-08, -0.999961972, -1.42393153e-09, 1, 1.031637e-08, 0.999961972, 1.5138687e-09, -0.00872315187)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Void Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4603.97754, 144.400009, 5268.51904, 0.0261411518, 5.12437737e-08, 0.999658287, -4.14366745e-08, 1, -5.0177718e-08, -0.999658287, -4.01108124e-08, 0.0261411518)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Anaglyph Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-336.323517, 27.0000076, 148.282349, -5.21543342e-08, 7.69840014e-08, -1, 2.15358753e-08, 1, 7.69840014e-08, 1, -2.15358718e-08, -5.21543342e-08)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Explosive Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-266.749603, -10.5999937, 349.603424, -0.0174502507, 4.02440392e-09, -0.99984771, -3.73556368e-08, 1, 4.67698147e-09, 0.99984771, 3.74315619e-08, -0.0174502507)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Rainy Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-945.59552, 27.0000076, -134.807388, -0.999961913, -4.81994222e-09, 0.0087263016, -3.93217414e-09, 1, 1.01751944e-07, -0.0087263016, 1.01713759e-07, -0.999961913)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Block ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-257.083984, 15.000741, 730.626099, -9.87201929e-08, -3.59113059e-08, -1, -9.31111757e-08, 1, -3.59112988e-08, 1, 9.31111686e-08, -9.87201929e-08)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Keys", 17258300312) -- Title, Image
+local Section = Tab:CreateSection("keys unlcoekd boom")
+ 
+local Button = Tab:CreateButton({
+   Name = "White Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.651001, 5.00000906, -59.6618919, 0.999961972, 7.76137998e-09, 0.00872270297, -7.72281084e-09, 1, -4.45534276e-09, -0.00872270297, 4.38780967e-09, 0.999961972)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Blue Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-601.664795, 5.00000906, -122.091103, 0.00872881711, -8.23919635e-08, 0.999961913, 5.96169727e-08, 1, 8.18746955e-08, -0.999961913, 5.89000351e-08, 0.00872881711)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Red Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-860.975891, 4.80000687, 267.101044, 0.00873194076, 9.32499091e-08, 0.999961853, 7.1950339e-08, 1, -9.38817522e-08, -0.999961853, 7.27673637e-08, 0.00873194076)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Green Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1530.45801, 19.600008, 213.958344, -0.00872907415, 1.09893927e-09, -0.999961913, -8.47069792e-09, 1, 1.17292531e-09, 0.999961913, 8.48061354e-09, -0.00872907415)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Yellow Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422.133789, 5.00000906, 437.413971, 1, -9.44445677e-09, -9.1931137e-15, 9.44445677e-09, 1, 1.25638477e-08, 9.07445539e-15, -1.25638477e-08, 1)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Key ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-335.709503, 24.4769287, 309.620117, -0.999390841, 1.0563542e-08, -0.0348984897, 1.10515082e-08, 1, -1.37895499e-08, 0.0348984897, -1.41668313e-08, -0.999390841)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Items", 6523936771) -- Title, Image
+local Section = Tab:CreateSection("ahh items yeas")
+ 
+local Button = Tab:CreateButton({
+   Name = "Spawner Teleporter Lite ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-464.608429, -13.1999922, -445.59903, 0.00872967578, 4.32145555e-08, 0.999961913, -2.95516678e-08, 1, -4.29582165e-08, -0.999961913, -2.91755295e-08, 0.00872967578)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Ginormous Monster Enegry 1 ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2001.08374, 2.39663553, 2339.83984, 0.99288398, -0.000522158924, 0.119084604, 0.000511860941, 0.999999881, 0.000117062205, -0.119084649, -5.52744386e-05, 0.992884099)
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Ginormous Monster Enegry 2 ",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4179.28711, 200.398529, -596.988586, 0.992687047, 0.000284590991, 0.120715782, -0.000232393286, 0.999999881, -0.000446479564, -0.120715901, 0.000415160932, 0.992686987)
+   end,
+})
+ 
+local Tab = Window:CreateTab("Others", nil) -- Title, Image
+local Section = Tab:CreateSection("work")
+ 
+local Button = Tab:CreateButton({
+   Name = "Ragdoll ",
+   Callback = function()
+   game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("Ragdoll"):WaitForChild("TextButton"):WaitForChild("player"):FireServer()
+   end,
+})
+ 
+local Tab = Window:CreateTab("Dev Tools", nil) -- Title, Image
+local Section = Tab:CreateSection("mhm devs")
+ 
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+ 
+local Button = Tab:CreateButton({
+   Name = "Explorer Dex ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+   end,
+})
