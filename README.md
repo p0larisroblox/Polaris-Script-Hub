@@ -1,2 +1,1 @@
-These script made by me i did not steal this
-have fun using this ig hahaz
+very cool script also u can choose which one u want like kavo ui or rayfield if like ur executor is very low just use kavo ui but if ur executor is high just rayfield its yall choice. ok bye little scripters
