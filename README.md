@@ -2,7 +2,7 @@ very cool script
 
 Game Supported:
 
-1. Grow A Garden Modded By Bloxy Fruiters
+1. (BETA) Grow A Garden Modded By Bloxy Fruiters
 
 https://www.roblox.com/games/122831562051976/CRAFTING-Grow-a-Garden-Modded
 
