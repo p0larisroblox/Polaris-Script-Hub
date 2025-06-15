@@ -829,7 +829,6 @@ local args = {
     buffer.fromstring("\t\000\000\192]y\141\232A")
 }
 game:GetService("ReplicatedStorage"):WaitForChild("ByteNetReliable"):FireServer(unpack(args))
-end
    end,
 })
 
@@ -840,7 +839,6 @@ local args = {
     buffer.fromstring("\t\000\000`\181\157|\232A")
 }
 game:GetService("ReplicatedStorage"):WaitForChild("ByteNetReliable"):FireServer(unpack(args))
-end
    end,
 })
 
@@ -851,7 +849,6 @@ local args = {
     buffer.fromstring("\t\000\000\128\224aj\232A")
 }
 game:GetService("ReplicatedStorage"):WaitForChild("ByteNetReliable"):FireServer(unpack(args))
-end
    end,
 })
 
@@ -862,6 +859,5 @@ local args = {
     buffer.fromstring("\t\000\000\000\187=\153\232A")
 }
 game:GetService("ReplicatedStorage"):WaitForChild("ByteNetReliable"):FireServer(unpack(args))
-end
    end,
 })
